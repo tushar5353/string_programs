@@ -36,3 +36,20 @@ class StringFunctions:
         else:
             return "".join(sorted(self.str1)) == "".join(sorted(self.str2))
 
+
+    def urlifyString(self):
+        """
+        function to replace space with %20.
+        """
+        res = ""
+        start = False
+
+        for i in reversed(self.str1):
+            if i != ' ':
+                start = True
+
+            if (i == ' '  and start is True):
+                res += '02%'
+            else:
+                res += i
+        return res[::-1]
