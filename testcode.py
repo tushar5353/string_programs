@@ -1,6 +1,6 @@
 import string_ques
 
-str1 = "as df    "
+str1 = "aa bb cc"
 str2 = "asodf"
 
 str_func_obj = string_ques.StringFunctions(str1, str2)
@@ -13,3 +13,6 @@ print(str_func_obj.stringPermutation())
 
 print("urilifying a string:")
 print(str_func_obj.urlifyString())
+
+print("PermutationPalindrome:")
+print(str_func_obj.isPermutationPalindrome())

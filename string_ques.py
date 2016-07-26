@@ -2,6 +2,8 @@
 class file for containing various string functions
 """
 
+import string
+
 
 class StringFunctions:
 
@@ -53,3 +55,18 @@ class StringFunctions:
             else:
                 res += i
         return res[::-1]
+
+
+    def isPermutationPalindrome(self):
+        d = dict.fromkeys(string.ascii_lowercase, False)
+        count = 0
+        for i in self.str1:
+            if(ord(i)>97 and ord(i)<123):
+                d[i] = not d[i]
+
+        for key in d:
+            if d[key] == True:
+                count += 1
+                if count > 1:
+                    return False
+        return True
