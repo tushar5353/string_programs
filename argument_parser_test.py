@@ -1,8 +1,7 @@
 import utility
 import sys
 
-options = [{"argument_name": "x", "require": True, "help_string": "this is simple","default_value": "xx", "custom_name": "X",
-"action": "store", "constant_value":"sss", "data_type": str}]
+options = [{"argument_name": "Xterminate", "require": True, "help_string": "this is simple","default_value": "xx", "custom_name": "Xterm","action": "store", "constant_value":"sss", "data_type": str}]
 PROG = sys.argv[0]
 DESCRIPTION = """
             this is a testing program
