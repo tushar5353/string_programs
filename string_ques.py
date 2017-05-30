@@ -1,5 +1,5 @@
 """
-class file for containing various string functions
+class file containing various string functions
 """
 
 import string
